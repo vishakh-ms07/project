@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(131, 150, 150) ;
+        }
+    section {
+        padding: 10px;
+        margin: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #details{
+    border: 2px solid slategray ;
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+    border-width: 5px;
+    
+    }
+    #bookings{
+        text-align: center;
+        font-size: xx-large;
+    }
+    #ride{
+        text-align: center;
+        font-size: xx-large;
+    }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="ride"><p><h2>Gears For Rentals</h2></p></div>
+    <section id="equipment">
+        <h2>Available Gear</h2>
+        <div class="equipment-item">
+            <img src="https://www.customelements.in/wp-content/uploads/2022/03/Alpinestars-Viper-V3-Air-Textile-Black-Riding-Jacket-scaled.webp" alt="background-image" width="300px" height="300px">
+            <h3>Jackets</h3>
+            <p>Price: 200/day</p>
+            <p>Features: 2nd level protection padding.</p>
+        </div></section>
+        <section>
+        <h2>Availabe Gear</h2>
+        <div class="equipment-item">
+            <img src="https://www.ahhelmets.in/28719-thickbox_default/smk-titan-panther-gloss-black-grey-red-gl263-helmet.jpg" alt="background-image" width="300px" height="300px">
+            <h3>Helmets</h3>
+            <p>Price: 50/day</p>
+            <p>Features:Helements for rent only for the pillion rider.</p>
+        </div></section>
+        <section>
+        <h2>Availabe Gear</h2>
+        <div class="equipment-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8TWXg9qyl_CllymuMXNLSbebDwCduqb61WA&s" alt="background-image" width="300px" height="300px">
+            <h3>Dash Camera</h3>
+            <p>Price: 400/day</p>
+            <p>Features: High efficiency, large capacity.</p>
+        </div></section>
+    <section>
+    <div id="bookings">
+    <p><b>FOR BOOKINGS</b></p>
+    </div>
+    <div id="details">
+    <form action="abc.php" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="write your name" size="20" maxlength="10"><br>
+        <br><label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="write your email" size="20" maxlength="5720"><br>
+        <br>
+        <label for="Phone">Phone Number:</label>
+        <input type="text" id="number" placeholder="write your number" size="20" maxlength="500">
+        <br><br>
+        <label for="course">Choose the Equipment: </label><br>
+        <input type="radio" name="course" id="btech" value="btech">
+        <label for="Tractor">Helemets</label>
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="Tractor">Jackets</label>
+        <input type="radio" name="course" id="bpt" value="bpt">
+        <label for="Harvester">Dash Camera</label><br>
+        <br>
+        <label for="state">Choose your State </label>
+        <select name="state" id="state" size="multiple">
+            <option value="selectstate">Select a state</option>
+            <option value="andhara">Andhara</option>
+            <option value="punjab">Punjab</option>
+            <option value="kerala">Kerala</option>
+            <option value="kashmir">Kashmir</option>
+            <option value="himachal">Himachal</option>
+            <option value="bengaluru">Bengaluru</option>
+        </select>
+        <br><br>
+        <label for="district">Choose your district</label>
+        <select name="district" id="district" size="multiple">
+            <option value="select">Select</option>
+            <option value="trivanduram">Trivanduram</option>
+            <option value="kannur">Kannur</option>
+            <option value="kochi">Kochi</option>
+            <option value="kozhikode">Kozhikode</option>
+            <option value="palakade">Palakade</option>
+        </select>
+        <br><br>
+        
+        <label for="subtton">Submit:</label>
+        <input type="submit" name="subtton" id="subtton" value="submit form">
+        <br><br>
+        <label for="rebutton">Reset:</label>
+        <input type="reset" name="rebutton" id="rebutton" value="reset">
+       
+        
+       </form>
+    </div> </section>
+</body>
+</html>
